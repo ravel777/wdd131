@@ -1,0 +1,120 @@
+header h1 {
+    background-color: #1D4D72;
+    color: #FFF;
+    text-align: center;
+
+}
+header h1 .name-color {
+    color: #F7FB0F;
+}
+header nav {
+    background-color: #333;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+header nav  a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 10px;
+}
+header nav a:hover{
+    text-decoration: underline;
+    color: #F7FB0F;
+}
+
+/* About me */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+/* Section 1 */
+main .card {
+    grid-column: 1/3;
+    border: solid 1px #CCC;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0;
+}
+main .card h2 {
+    border-radius: 10px 10px 0 0;
+    background-color: #1D4D72;
+    color: #EEE;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+}
+main .card .group1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 10px
+} 
+.card .group1 .paragraph h3 {
+    text-align: center;
+    border-bottom: solid 1px #CCC;
+    margin: 0 20px;
+}
+.card .group1 img {
+    border: double 2px #AAA;
+    border-radius: 8px;
+    width: 80%;
+    height: 85%;
+}
+.card .group2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px 10px;
+    align-items: center;
+}
+.card .group2 .image {
+    text-align: center;
+}
+.card .group2 .image img {
+    width: 100%;
+}
+.card .group2 .paragraph p {
+    padding: 0px 0px 20px 0px;
+}
+/* Section 2 */
+.card2 {
+    grid-column: 3/4;
+    border: solid 1px #CCC;
+    border-radius: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+main .card2 h2 {
+    border-radius: 10px 10px 0 0;
+    background-color: #1D4D72;
+    color: #EEE;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+}
+.card2 div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.card2 ul {
+    grid-row: 2/3;
+}
+.card2 ul li {
+}
+
+/* Footer */
+footer {
+    background-color: #1D4D72;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 10px;
+}
+footer .modified span {
+    color:#F7FB0F;
+}
