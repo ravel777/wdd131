@@ -1,6 +1,9 @@
 body {
     font-family: "Roboto", Sans-serif;
 }
+body.ndombi {
+    background-color: #000;
+}
 
 header, main, footer {
     max-width: 640px;
@@ -19,4 +22,11 @@ main {
 section {
     padding: 1rem;
     background-color: #FFF;
+}
+
+footer ul {
+    display: none;
+}
+footer ul.open {
+    display: block;
 }
