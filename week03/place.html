@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>Republic of Congo</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/gorilla-1965.webp" media="(min-width: 1200px)">
+            <source srcset="images/gorilla-1200.webp" media="(min-width: 741px)">
+            <source srcset="images/gorilla-740.webp" media="(max-width: 740px)">
+            <img alt="Congo" src="images/Congo-1440.jpg">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div>
+                <ul>
+                    <li><span class="left">Area: </span><span class="right">342000 sq km</span></li>
+                    <li><span class="left">Population: </span><span class="right"> 6,183,000</span></li>
+                    <li><span class="left">Capital: </span><span class="right">Brazzaville</span></li>
+                    <li><span class="left">Languages: </span><span class="right">Lingala, Kikongo, French</span></li>
+                    <li><span class="left">Currency: </span><span class="right"> XAF</span></li>
+                    <li><span class="left">Time Zone: </span><span class="right"> UTC+1</span></li>
+                    <li><span class="left">Calling Code: </span><span class="right"> +242</span></li>
+                    <li><span class="left">Internet TLD: </span><span class="right">.cg</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <i>⛅</i>
+            <div>
+                <ul>
+                    <li><span class="left">Temperature: </span><span class="temperature"></span></li>
+                    <li><span class="left">Conditions: </span><span class="conditions"></span></li>
+                    <li><span class="left">Wind: </span><span class="wind"></span></li>
+                    <li><span class="left">Wind Chill: </span><span class="wind-chill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear">year</span>
+            <span> 🌴 Ravel BITOUNGUI 🌴 </span>
+            <span>Pointe-Noire, Republic of Congo</span>
+        </p>
+        <p class="modified">
+            Last modification: <span id="lastedit"></span>
+        </p>
+
+        <script src="scripts/place.js" defer></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@media screen and (min-width: 740px) {
+    main {
+        display: grid;
+        grid-template-columns: 5% 5% 30% 20% 30% 5% 5%;
+        grid-template-rows: 5% 5% 20% 20% 20% 20% 5% 5%; 
+        color: #333;
+    }
+    main picture {
+        grid-column: 1/8;
+        grid-row: 1/9;
+    }
+    main .data {
+        background-color: #FFF;       
+        grid-column: 2/4;
+        grid-row: 2/5;
+    }
+    main .data h2 {
+        background-color: #FFDD00;
+        padding: 5px 10px;
+        position: relative;
+        left: -10px;
+    }
+    main .data ul {
+        padding: 0;
+    }
+    main .weather {
+        background-color: #FFF;
+        grid-column: 5/7;
+        grid-row: 5/8;
+    }
+    main .weather h2 {
+        background-color: #FFDD00;
+        padding: 5px 10px;
+        position: relative;
+        left: -10px;
+    }
+    main .weather h2::after {
+        content: "";
+        margin-top: 0;
+        font-size: 16px;
+    }
+    main .weather i {
+        display: block;
+        font-size: 40px;
+    }
+    main .weather ul {
+        padding: 0;
+        width: 100%;
+    }
+    main section .left {
+        color: #333;
+        font-weight: bold;
+        display: inline-block;
+    }
+    main section .right {
+        color: #333;
+        display: inline-block;
+    }
+    main .weather :is(.temperature, .conditions, .wind, .wind-chill) {
+        color: #FF5500;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main .data {
+        background-color: #FFF;       
+        grid-column: 2/4;
+        grid-row: 2/5;
+    }
+    main .weather {
+        background-color: #FFF;
+        grid-column: 5/7;
+        grid-row: 5/7;
+    }
+}

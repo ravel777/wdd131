@@ -1,0 +1,95 @@
+:root {
+    --green-color: #299B48;
+    --font-color1: #FFF;
+    --background-color1: #333123;
+    --my-font: "Lato", sans-serif;
+    --weather-fa: "\f743";
+}
+
+body {
+    display: block;
+    background-color: var(--background-color1);
+    font-family: var(--my-font);
+    color: var(--font-color1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+header {
+    background-color: var(--green-color);
+    color: #FFF;
+    padding: 1rem 1rem;
+}
+
+main ul {
+    list-style-type: none;
+}
+picture img {
+    width: 100%;
+}
+
+/* Pseudo element */
+picture::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: -2px;
+    width: 100%;
+    height: 5px;
+    border: solid 2px var(--green-color);
+    background-color: var(--green-color);
+}
+main .data ul {
+    text-align: center;
+}
+main .data li .left {
+    font-weight: bold;
+    text-align: right;
+    width: 49%;
+    display: inline-block;
+    margin-right: 3px;
+}
+main .data li .right {
+    text-align: left;
+    width: 49%;
+    display: inline-block;
+    margin-left:2px;
+}
+main .weather {
+    border-top: solid 1px #777123;
+}
+main .weather h2::after {
+    font-family: "Font Awesome 6 Free";
+    content: var(--weather-fa);
+    color: #FFCC44;
+    display: block;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 50px;
+    margin-top: 20px;
+}
+main .weather i {
+    display: none;
+}
+main .weather li .left {
+    font-weight: bold;
+    text-align: right;
+    width: 49%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+/* Extra pseudo class */
+main .weather :is(.temperature, .conditions, .wind, .wind-chill) {
+    color: #FFCC44;
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+footer {
+    background-color: var(--green-color);
+    padding: 1rem 1rem;
+}
