@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #555;
+}
+header {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #FFF;
+    color: #555;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 24px;
+}
+.navbar img {
+    width: 150px;
+}
+.nav-menu {
+    background: #FFF;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+    display: block;
+    position: fixed;
+    left: -120%;
+    top: 0px;
+    flex-direction: column;
+    gap: 0;
+    z-index: 10;
+}
+.nav-menu.active {
+    left: 0;
+}
+.nav-menu li {
+    list-style-type: none;
+}
+.nav-menu li a {
+    color: #555;
+    text-decoration: none;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 11;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    z-index: 1;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    z-index: 11;
+
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    z-index: 11;
+
+}
+.hamburger .bar {
+    background-color: #555;
+    display: block;
+    margin: 5px auto;
+    width: 25px;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Main */
+main {
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer Style */
+footer {
+    background-color: #555;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 0;
+}
