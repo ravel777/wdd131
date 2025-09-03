@@ -1,18 +1,3 @@
-console.log(document);
-var msg = "";
-elmentGot = document.querySelector("#about");
-elmentGot.textContent += msg == "" ? " Cracker" : msg;
-para = document.createElement("p");
-sp = document.createElement("span");
-elmentGot.appendChild(para);
-elmentGot.append(para, "How are doing ?");
-elmentGot.appendChild(sp);
-elmentGot.append(sp, "COCOLICO");
-elmentGot.removeChild(sp);
-
-buttonElement.addEventListener("well", opened) {
-    
-}
 
 //Show the current year
 show_date = document.getElementById("currentyear");

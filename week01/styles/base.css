@@ -20,10 +20,12 @@ header nav  a{
     color: #FFF;
     text-align: center;
     padding: 10px 10px;
+    transition: all .6s ease;
 }
 header nav a:hover{
     text-decoration: underline;
     color: #F7FB0F;
+    transform: rotate(7deg);
 }
 
 /* About me */
@@ -106,6 +108,11 @@ main .card2 h2 {
     grid-row: 2/3;
 }
 .card2 ul li {
+}
+.card2 a:hover{
+    text-decoration: underline;
+    color: #1D4D72;
+    font-weight: bold;
 }
 
 /* Footer */
