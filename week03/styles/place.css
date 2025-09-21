@@ -63,7 +63,7 @@ main .weather h2::after {
     font-family: "Font Awesome 6 Free";
     content: var(--weather-fa);
     color: #FFCC44;
-    display: block;
+    display: none;
     font-style: normal;
     font-variant: normal;
     font-size: 50px;
@@ -71,6 +71,7 @@ main .weather h2::after {
 }
 main .weather i {
     display: none;
+    border: none;
 }
 main .weather li .left {
     font-weight: bold;
